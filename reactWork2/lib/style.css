@@ -14,7 +14,7 @@ p{
     background-color: rebeccapurple;
 }
 
-div,h2{
+.b,h2{
     color:white;
     background-color: brown;
     margin: 50px;
@@ -66,3 +66,78 @@ input[type=text],input[type=password]{
 input[type=password]:focus,input[type=text]:focus{
     background-color: lightblue;
 }
+
+.a{
+    width:200px;
+    height: 200px;
+    background-color: turquoise;
+    padding:15px;
+    border: 10px solid wheat;
+    box-sizing: border-box;
+    /*box-sizing sayesinde padding ve border,200px boyutunu arttırmaz
+    200px korunur*/
+    border-radius: 50px;
+    /*köşeleri biçimlendirir*/
+    
+}
+
+.c{
+    width:200px;
+    height: 200px;
+    background-color: pink;
+    padding:15px;
+    border: 10px double wheat;
+    /*box-sizing: border-box;*/
+    border-radius: 200px;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:2em;
+    font-weight:bold;
+    text-decoration: underline rgb(255, 254, 206) wavy;
+    /*text-decoration-line: underline;
+    text-decoration-color: lime;
+    text-decoration-style: wavy;*/
+}
+
+div#kutular{
+    width: 940px;
+    height: 480px;
+    border:8px double purple;
+    margin: auto;
+    display: flex; /*soldan sağa dizdi*/
+    /*direction: rtl;
+    flex-direction:low-reverse;    
+    //soldan sağa diziliyor*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*8 kutuyu tek satıra sıkıştırmadan alt satırdan devamm ediyor*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.kutu{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 197, 126);
+    color:aliceblue;
+    text-align: center;
+    line-height: 200px;
+    margin: 5px;
+    overflow: hidden;/*icerik tasmasini önler*/
+
+}
+
+div.kutu img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
