@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link 
+            rel="stylesheet" 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" 
+            crossorigin="anonymous">
+        <style>
+            
+            .jumbotron{
+                margin-bottom: 0;
+                color: rgb(213, 213, 213);
+                background-color: rgb(23, 23, 23);
+            }
+           
+            .navbar{
+                margin-bottom: 0;
+                background-color: rgb(37, 37, 37);
+                opacity: 0.6;
+            }
+            .navbar-brand,.nav-link{
+                color: rgb(255, 255, 255);
+                font-family:Arial, Helvetica, sans-serif ;
+            }
+            .ogeler,.dropdown{
+                display: flex;
+                justify-content: start;
+                z-index: 9999;
+                
+            }
+
+            .dropdown-item{
+                z-index: 99999999999;
+                position: relative;
+            }
+           
+            .img1 {
+                width: 250px; /* Genişlik */
+                height: 200px;
+             }
+
+            .cerceve {
+                width: 810px; /* Çerçevenin genişliği */
+                height: 300px; /* Çerçevenin yüksekliği */
+                overflow: hidden; /* Taşan içeriği gizle */
+                border: 1px solid #ccc; /* Opsiyonel: Çerçeve kenarlık stilini belirle */
+            }
+
+            .cerceve.img2 {
+                width: 100%; /* Resmi çerçevenin genişliğine sığdır */
+                height: auto; /* Otomatik yükseklik ve oranı koru */
+                display:flex; /* Resmi blok element olarak göster */
+            }
+
+            .container2{
+                border: 2px solid #ccc;
+                border-radius: 10px;
+                padding: 20px;
+                margin-right: 10px;
+                text-align: center;
+
+            }
+
+            #footer2{
+                height: 200px;
+                padding: 60px;
+                padding-bottom: 40px;
+                background-color: #000000;
+                color:#e5e5e5;
+            }
+
+            #abonebuton{
+                background-color: #626262;
+            }
+            
+
+        </style>
+
+    </head>
+
+
+
+    <body>
+        <div class="jumbotron text-center">
+            <h1>AYKIRI</h1>
+            <p>Çok az kişinin bildiği nadir sanat için buradasın. Evet.</p>
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid"><!--cihaz değiştiğinde boyut uygun olsun-->
+                
+                <a class="navbar-brand" href="#">AYKIRI</a>
+                <!--   
+                -->
+
+                <div class="ogeler">
+
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">
+                            Blog Yazıları</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item">bir</a>
+                            <a class="dropdown-item">bir</a>
+                            <a class="dropdown-item">bir</a>
+                            <a class="dropdown-item">bir</a>
+                            <a class="dropdown-item">bir</a>
+                            <a class="dropdown-item">bir</a>
+                        </div>
+                    </div>
+
+                    <a class="nav-link" href="#">Makaleler</a>
+                    <a class="nav-link" href="#">Kitaplar</a>
+                    <a class="nav-link" href="#">Tablolar</a>
+                    <a class="nav-link" href="#">Müzikler</a>
+                    <a class="nav-link" href="#">Keşifler</a>
+                    
+                </div>
+                
+                <div class="butons">
+                    <button type="button" class="btn btn-dark ">GİRİŞ YAP</button>
+                    <button type="button" class="btn btn-light">KAYIT OL</button>
+                </div>
+                
+            </div>
+        </nav><br>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"><h3>BU EKİP KİM?</h3></div>
+                <div class="col"><h3>KEŞFETMEYE BURADAN BAŞLA</h3></div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <br>
+                    <img class="img1" src="https://images.pexels.com/photos/696407/pexels-photo-696407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <br><br>
+                    <p>
+                        "Aykırı" isimli blog, gizemli ve nadir sanat içeriklerini keşfetmeyi amaçlayan özgün bir platformdur. Biz, bu blogun arkasındaki ekip olarak, sanatın sıra dışı ve bilinmeyen yönlerini keşfetmeye adanmış bir topluluğuz. Amacımız, genellikle gözden kaçan veya daha az bilinen sanat eserlerini, sanatçıları ve sanatın farklı dallarını keşfederek insanları bu benzersiz dünyaya davet etmek.
+                    </p>
+                    <a class="card-link" href="#">Daha Fazla Bilgi</a><br>
+                    <a class="card-link" href="#">İletişim</a><br>
+                    <a class="card-link" href="#">İletişim 2</a><br>
+                    <br><br>
+                    <div class="container2">
+                        <h4>RASTEGELE GELSİN</h4><br>
+                        <button type="button" class="btn btn-dark ">ŞİMDİ</button>
+                    </div>
+                    
+                </div>
+
+
+                <div class="col">
+                    <br>
+                    <h4>Post-Rock ve Derinliği: Kafabindünya</h4>
+                    <h6>Kategori: <a class="card-link" href="#">Müzik</a></h6>
+                    <div class="cerceve"><img class="img2" src="https://2.bp.blogspot.com/-Ttt24wsOoao/T0Dm4Yuiy6I/AAAAAAAAACs/MdvAXZMhsAs/w1200-h630-p-k-no-nu/210985_10150463519339503_24160309502_8633330_42613464_o.jpg" alt=""></div>
+                    <br>
+                    <p>
+                        Kafabindünya, Türkiye'nin alternatif müzik sahnesinde kendine özgü tarzı ve müzikal kimliği ile dikkat çeken bir grup. İstanbul merkezli olan bu müzik topluluğu, farklı tınıları bir araya getirerek geniş bir müzik yelpazesi sunuyor. Grup, çeşitli müzik türlerini kendi özgün tarzlarıyla harmanlayarak dinleyicilere benzersiz bir deneyim sunuyor.
+                        Kafabindünya, etkileyici enstrümantal performansları, deneysel sesleri ve özgün müzikal yaklaşımıyla öne çıkıyor. Grubun şarkı sözleri, genellikle toplumsal konulara, insan ilişkilerine ve günlük yaşama dair derinlikli ve düşündürücü mesajlar içeriyor. Bu da dinleyicileri hem müziğin ritmine kapılmaya hem de sözlerin anlamlarını keşfetmeye yönlendiriyor.
+                        Kafabindünya'nın sahne performansları, enerjik ve etkileyici bir atmosfer yaratırken, stüdyo kayıtları da özgün müzikal yapıları ve yaratıcı enstrümantasyonlarıyla öne çıkıyor. Grubun tarzı, genellikle rock, caz, funk ve...
+                    </p>
+
+                    <br>
+                    <br>
+                    <h4>Türk Deneysel Progresif Rock Grubu: Nekropsi</h4>
+                    <h6>Kategori: <a class="card-link" href="#">Müzik</a></h6>
+                    <div class="cerceve"><img class="img2" src="https://media.bantmag.com/wp-content/uploads/2021/09/nekropsi-nekropsi-800x533.jpg" alt=""></div>
+                    <br>
+                    <p>
+                        Nekropsi, Türkiye merkezli bir metal müzik grubudur. 1995 yılında kurulan grup, Türk metal sahnesinde önemli bir yere sahiptir. İlk dönemlerinde thrash metal etkileri taşıyan müzikleriyle dikkat çeken Nekropsi, zamanla farklı metal alt türlerini bir araya getirerek kendi özgün tarzını oluşturmuştur.
+                        Grup üyeleri genellikle şarkı sözlerinde toplumsal eleştirilere ve içsel sorgulamalara yer verirken, müzikal anlamda da deneysel ve sıra dışı unsurları eserlerine dahil etmişlerdir. Sahne performanslarıyla da bilinen Nekropsi, enerjik ve etkileyici gösterileriyle hayran kitlesini kendine çekmiştir.
+                        Kariyerleri boyunca çeşitli albümler yayınlayan grup, Türkiye'de metal müzik kültürünün gelişimine katkıda bulunmuş ve yerel sahnede kendine sağlam bir yer edinmiştir. Nekropsi, müzikal deneyimleriyle ve özgün tarzlarıyla Türk metal müziğinin önemli isimlerinden biri olarak kabul edilmektedir. 
+                        Nekropsi, özgün tarzı, sıra dışı enstrümant...      
+                    </p>
+
+
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    </body>
+
+
+    <br><br><br>
+    <footer>
+        <form action="">
+            <div class="row d-flex justify-content-center" id="footer2">
+                <div class="col-auto">
+                    <strong>Bültenimize üye olmak için:</strong>
+                </div>
+                <div class="col-md-5 col-12">
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="email" id="a" class="form-control" placeholder="E-mail Adresi"/>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-dark mb-4" id="abonebuton">Abone Ol</button>
+                </div>
+            </div>
+        </form>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    </footer>
+</html>
