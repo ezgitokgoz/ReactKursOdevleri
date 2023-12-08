@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <STYLE>
+        #baslik{
+            display: flex;
+            justify-content: center;
+        }
+        #resimler{
+            padding-left :500px;
+            padding-right: 500px;
+            padding-bottom: 500px;
+        }
+        .resim-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1px; /* İsteğe bağlı olarak hücreler arasındaki boşluğu ayarlayabilirsiniz */
+        }
+
+        .resim-container img {
+            width: calc(33.33% - 5px); /* Resimlerin div içinde tam olarak genişlemesini sağlar */
+            height: auto;
+            object-fit: cover; /* Resimleri hücre boyutuna uyacak şekilde sığdırır */
+        }
+
+    </STYLE>
+    <head>
+        <div id="baslik">
+            <h1>RESİM GALERİSİ</h1>
+        </div>
+    </head>
+
+    <body>
+        <div id="resimler" class="resim-container">
+
+        </div>
+        
+    </body>
+
+    <script>
+        // 3x3'lük bir dizi oluştur
+const resimLinks = [
+  'https://images.unsplash.com/photo-1699710847381-408b2b96dd0a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMjA3Mjg1NQ&ixlib=rb-4.0.3&q=80&w=300',
+  'https://images.unsplash.com/photo-1699488169557-9f5e0d0a26df?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMjA3Mjg3OQ&ixlib=rb-4.0.3&q=80&w=300',
+  'https://images.unsplash.com/photo-1700254783347-7b91d9bfad89?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMjA3MjkxNw&ixlib=rb-4.0.3&q=80&w=300',
+  'https://images.unsplash.com/photo-1701824581086-41a778a4c9a0?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMjA3MzE3Mg&ixlib=rb-4.0.3&q=80&w=300',
+  'https://images.unsplash.com/photo-1699134115052-bd7899efddcc?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMjA3MzA1NA&ixlib=rb-4.0.3&q=80&w=300',
+  'https://images.unsplash.com/photo-1700322153270-1221b6abe6cb?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMjA3MzA3Nw&ixlib=rb-4.0.3&q=80&w=300',
+  'https://images.unsplash.com/photo-1699469786384-3717a73da415?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMjA3MzEwMQ&ixlib=rb-4.0.3&q=80&w=300',
+  'https://images.unsplash.com/photo-1699823242809-0386f4592503?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMjA3MzEyNA&ixlib=rb-4.0.3&q=80&w=300',
+  'https://images.unsplash.com/photo-1699991381198-0a4c60e18486?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMjA3MzE1Mg&ixlib=rb-4.0.3&q=80&w=300',
+  'https://images.unsplash.com/photo-1699436245497-47cf50f7c4b2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMjA3Mzg2Nw&ixlib=rb-4.0.3&q=80&w=300',
+  'https://images.unsplash.com/photo-1699955492209-a9d261c4564a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMjA3Mzg5Mw&ixlib=rb-4.0.3&q=80&w=300',
+  'https://images.unsplash.com/photo-1700359387203-d24d08d07b04?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMjA3MzkwOQ&ixlib=rb-4.0.3&q=80&w=300'
+  
+];
+
+
+// Her hücreye resimleri ekle
+function rastgeleResimSec() {
+  return resimLinks[Math.floor(Math.random() * resimLinks.length)];
+}
+
+const resimlerDiv = document.getElementById('resimler');
+
+for (let i = 0; i < 9; i++) {
+  const img = document.createElement('img');
+  img.src = rastgeleResimSec();
+  img.alt = `Resim ${i + 1}`;
+  resimlerDiv.appendChild(img);
+}
+
+    </script>
+</html>
